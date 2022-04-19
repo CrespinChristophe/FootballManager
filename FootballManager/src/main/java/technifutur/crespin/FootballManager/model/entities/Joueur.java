@@ -24,5 +24,11 @@ public class Joueur {
     @Column(nullable = false, length = 50)
     private String prenom;
 
+    @ManyToOne
+    private Club club;
+
+    @ManyToOne
+    private Manager manager;
+
 
 }
