@@ -2,8 +2,8 @@ package technifutur.crespin.FootballManager.model.entities;
 
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
+
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -13,4 +13,15 @@ import javax.persistence.Table;
 @Builder
 @Table
 public class Club {
+
+    @Id
+    @Column(nullable = false)
+    private Long matricule;
+
+    @Column(nullable = false, length = 50)
+    private String nom;
+
+    @Column(nullable = false, length = 50)
+    private String adresse;
+
 }
