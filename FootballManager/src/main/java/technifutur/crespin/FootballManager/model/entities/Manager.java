@@ -2,8 +2,7 @@ package technifutur.crespin.FootballManager.model.entities;
 
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -13,4 +12,16 @@ import javax.persistence.Table;
 @Entity
 @Table
 public class Manager {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(nullable = false)
+    private Long id;
+
+    @Column(nullable = false, length = 50)
+    private String nom;
+
+    @Column(nullable = false, length = 50)
+    private String prenom;
+
 }
