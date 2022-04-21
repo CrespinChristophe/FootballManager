@@ -8,7 +8,7 @@ import lombok.Data;
 @Builder
 public class JoueurDTO {
 
-    private int id;
+    private Long id;
     private String nom;
     private String prenom;
     private ClubDTO clubDTO;
@@ -16,13 +16,13 @@ public class JoueurDTO {
 
     @Data
     @AllArgsConstructor
-    private static class ClubDTO {
+    public static class ClubDTO {
         private String nom;
     }
 
     @Data
     @AllArgsConstructor
-    private static class ManagerDTO {
+    public static class ManagerDTO {
         private String nom;
         private String prenom;
     }

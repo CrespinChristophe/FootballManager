@@ -11,7 +11,7 @@ import java.util.List;
 @Builder
 public class ManagerDTO {
 
-    private int id;
+    private Long id;
     private String nom;
     private String prenom;
     private List<JoueurDTO> joueurDTOList;

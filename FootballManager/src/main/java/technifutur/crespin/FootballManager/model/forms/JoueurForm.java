@@ -14,6 +14,7 @@ public class JoueurForm {
     @NotBlank
     @Size(min = 1, max = 50)
     private String nom;
+
     @NotBlank
     @Size(min = 1, max = 50)
     private String prenom;
